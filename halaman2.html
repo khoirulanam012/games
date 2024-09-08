@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permainan Berhitung</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Permainan Berhitung</h1>
+        <div id="game">
+            <p id="question" class="question-text"></p>
+            <input type="number" id="answerInput" placeholder="Masukkan jawaban" class="input-field">
+            <button id="submitAnswer" class="button">Kirim Jawaban</button>
+            <button id="startButton" class="button">Mulai Permainan</button>
+            <button id="restartButton" class="button hidden">Restart Permainan</button>
+            <p>Skor: <span id="score" class="score">0</span></p>
+            <p>Waktu Total: <span id="totalTimer" class="timer">10</span> menit</p>
+            <p>Waktu Pertanyaan: <span id="questionTimer" class="timer">10</span> detik</p>
+            <p>Tingkat Kesulitan: <span id="difficulty" class="difficulty">10</span></p>
+        </div>
+        <div id="gameOver" class="game-over hidden">
+            <h2>Permainan Selesai</h2>
+            <p>Skor Akhir: <span id="finalScore" class="final-score">0</span></p>
+            <button id="restartButton" class="button">Restart Permainan</button>
+        </div>
+    </div>
+    <audio id="correctSound" src="correct.mp3"></audio>
+    <audio id="wrongSound" src="wrong.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
